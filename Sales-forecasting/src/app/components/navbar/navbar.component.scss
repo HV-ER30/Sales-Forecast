@@ -1,0 +1,74 @@
+// Navbar styles
+.navbar {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+  }
+  
+  .navbar-brand {
+    font-weight: 500;
+    text-align: center; // Center the Sales Forecast text
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .nav-link {
+    color: #000;
+    font-weight: 500;
+    transition: color 0.3s; // Add transition for smoother color change on hover
+  }
+  
+  .nav-link:hover {
+    color: #ff5722; // Change color on hover
+  }
+  
+  // Authentication styles
+  li:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  // Example styles for authenticated state
+  .navbar-nav {
+    align-items: center;
+  }
+  
+  // Example styles for not authenticated state
+  .navbar-nav {
+    justify-content: flex-end;
+  }
+  
+  // Additional styles for login button on the right
+  #notAuthenticated {
+    margin-left: auto; // Push the login button to the right
+  }
+  
+  // Animations
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  // Apply animations to specific elements
+  .navbar {
+    animation: fadeIn 0.5s;
+  }
+  
+  .nav-link {
+    animation: slideIn 0.3s ease-in-out;
+  }
+  
+  
